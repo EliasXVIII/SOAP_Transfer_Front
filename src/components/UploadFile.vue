@@ -28,7 +28,7 @@
         reader.onload = async (event) => {
           const fileContent = event.target.result;
           
-          // Convert the file content to base64 (or use other encoding as needed)
+          
           const base64FileContent = btoa(
             new Uint8Array(fileContent).reduce((data, byte) => data + String.fromCharCode(byte), '')
           );

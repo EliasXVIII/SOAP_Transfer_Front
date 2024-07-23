@@ -43,9 +43,9 @@
           });
   
           if (response.ok) {
-            const responseText = await response.text(); // Leer respuesta como texto
+            const responseText = await response.text(); 
   
-            // Aquí puedes necesitar parsear la respuesta SOAP para extraer el contenido del archivo
+            
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(responseText, 'text/xml');
             
@@ -55,7 +55,7 @@
             // Decodificar el contenido base64
             const binaryData = atob(base64FileContent);
   
-            // Convertir los datos binarios en un Blob
+            
             const blob = new Blob([binaryData], { type: 'application/octet-stream' });
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
