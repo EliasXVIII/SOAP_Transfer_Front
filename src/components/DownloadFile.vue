@@ -20,7 +20,7 @@
           return;
         }
   
-        // Construir el mensaje SOAP
+        // Construir el mensaje SOAP Atencion a este paso 
         const soapMessage = `
           <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
             <soapenv:Header/>
